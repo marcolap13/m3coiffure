@@ -1,0 +1,566 @@
+html, body {
+    height: 100%; /* Assure que le body et le html occupent toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('salon.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#services, #testimonials, #contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    background-color: #474747; /* Couleur de fond grise */
+    color: #333; /* Couleur du texte gris foncé */
+    padding: 20px; /* Espacement interne pour le contenu du main */
+    flex: 1;
+}
+
+h1 {
+    font-size: 60px; /* Taille du texte */
+    font-weight: bold; /* Poids du texte pour un effet plus prononcé */
+    text-transform: uppercase; /* Transforme tout le texte en majuscules */
+    letter-spacing: 5px; /* Espacement des lettres pour un effet stylé */
+    text-align: center; /* Centrer le texte */
+    font-family: 'Arial', sans-serif; /* Police de caractères (modifiable selon votre préférence) */
+    /*color: #333; /* Couleur du texte, vous pouvez la changer selon vos goûts */
+    margin: 20px 0; /* Marges pour espacer le titre du reste du contenu */
+}
+
+.underline {
+    width: 80%; /* Longueur du trait, ajustable */
+    height: 3px; /* Épaisseur du trait */
+      /* Couleur du trait blanc */ 
+    background-color: #ccc;
+    margin: 0 auto 20px auto; /* Centrer le trait et espacement en dessous */
+}
+
+.header-image {
+    display: block; /* Rend l'image un élément de bloc pour centrer avec margin */
+    margin: 20px auto 20px auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
+.contact-image {
+    display: block; /* Rend l'image un élément de bloc pour centrer avec margin */
+    margin: 20px auto 20px auto; /* Centre l'image horizontalement */
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    width: 50%; /* Réduit la taille de l'image */
+}
+
+.contact-info {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 400px; /* Largeur maximale pour limiter la taille */
+    margin: 40px auto; /* Centre le bloc horizontalement */
+    font-family: 'Great Vibes', cursive; /* Applique une police stylée pour le titre */
+}
+
+.contact-info h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #e3c89c; /* Couleur stylée pour le titre */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+hsty {
+    font-size: 60px; /* Taille du texte */
+    font-weight: bold; /* Poids du texte pour un effet plus prononcé */
+    letter-spacing: 7px; /* Espacement des lettres pour un effet stylé */
+    text-align: center; /* Centrer le texte */
+    font-family: 'Great Vibes', cursive; /* Applique la police courbée et stylée */
+    color: #ffffff; /* Couleur du texte, ajustable selon vos préférences */
+    margin: 20px 0; /* Marges pour espacer le titre du reste du contenu */
+}
+
+hsty2 {
+    font-size: 60px; /* Taille du texte */
+    font-weight: bold; /* Poids du texte pour un effet plus prononcé */
+    letter-spacing: 7px; /* Espacement des lettres pour un effet stylé */
+    text-align: center; /* Centrer le texte */
+    font-family: 'Arial', cursive; /* Applique la police courbée et stylée */
+    color: #ffffff; /* Couleur du texte, ajustable selon vos préférences */
+    margin: 20px 0; /* Marges pour espacer le titre du reste du contenu */
+}
+
+
+/* Style pour la section services */
+#services {
+    padding: 40px 20px;
+    background-color: #000; /* Fond noir pour la section services */
+    color: #fff; /* Texte en blanc */
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-image {
+    width: 30%; /* Réduit la taille de l'image */
+    height: auto;
+}
+
+.service-text {
+    width: 70%;
+    text-align: center; /* Centre le texte */
+}
+
+.service-text h2 {
+    font-family: 'Great Vibes', cursive; /* Police stylée pour le titre */
+    font-size: 36px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+
+
+/* Ajout d'une marge entre les sections */
+#services, #tarifs-section {
+    margin-bottom: 40px; /* Espacement entre les sections */
+}
+
+/* Style pour la section tarifs */
+#tarifs-section {
+    padding: 40px 20px; /* Espacement interne */
+    background-color: #f7f7f7; /* Couleur de fond */
+}
+
+.tarif-content {
+    display: flex; /* Utilisation de flexbox pour aligner le texte et l'image */
+    align-items: center; /* Alignement vertical centré */
+    gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.tarif-text {
+    width: 60%; /* Le texte occupe 60% de la largeur du conteneur */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+}
+
+.tarif-text h2 {
+    font-family: 'Great Vibes', cursive; /* Police stylée pour le titre */
+    font-size: 36px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.tarif-text ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.tarif-text li {
+    font-size: 18px; /* Taille du texte des tarifs */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.tarif-image {
+    width: 30%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+/* Style du bouton */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444; /* Fond légèrement plus clair au survol */
+}
+
+
+
+/* Style pour la section horaires */
+#horaires-section {
+    padding: 40px 20px; /* Espacement interne */
+    background-color: #000; /* Fond noir pour la section horaires */
+    margin-bottom: 40px; /* Espacement en bas de la section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaires-content {
+    display: flex; /* Utilisation de flexbox pour aligner le texte et l'image */
+    align-items: center; /* Alignement vertical centré */
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    width: 100%; /* Pour s'assurer que le contenu prenne toute la largeur disponible */
+}
+
+.horaires-image {
+    width: 30%; /* Taille de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+.horaires-text {
+    width: 60%; /* Le texte occupe 60% de la largeur du conteneur */
+    color: #fff; /* Texte en blanc */
+    text-align: center; /* Centrage du texte */
+}
+
+.horaires-text h2 {
+    font-family: 'Great Vibes', cursive; /* Police stylée pour le titre */
+    font-size: 36px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.horaires-text ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.horaires-text li {
+    font-size: 18px; /* Taille du texte des horaires */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+/* Style pour la section des directions */
+#directions-section {
+    padding: 40px 10px; /* Espacement interne */
+    background-color: #fff; /* Couleur de fond */
+    margin-bottom: 40px; /* Espacement en bas de la section */
+    text-align: center; /* Centre le texte */
+    margin: 0 100px; /* Réduit la bordure sur les côtés */
+    
+
+}
+
+.directions-container {
+    display: flex; /* Utilisation de flexbox pour aligner l'image et le texte */
+    flex-direction: column; /* Aligne l'image et le texte en colonne */
+    align-items: center; /* Centre horizontalement */
+    gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+.directions-image {
+    max-width: 100%; /* L'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+    border: 10px solid #ddd; /* Bordure légère pour l'image */
+}
+
+.directions-text {
+    max-width: 600px; /* Largeur maximale pour le texte */
+    margin: 0 auto; /* Centre le texte horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+
+
+
+
+
+/* Style spécifique pour les sections de la page tarifs */
+.tarif-section {
+    background-color: #fff; /* Fond blanc pour ces sections */
+    color: #333; /* Texte en noir foncé */
+    padding: 40px 20px; /* Espacement interne pour les sections */
+    margin: 20px 0; /* Marges externes pour espacer les sections */
+    text-align: center; /* Centre le texte à l'intérieur des sections */
+    border-radius: 10px; /* Ajoute des coins arrondis aux sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour un effet de profondeur */
+}
+
+.tarif-section h2 {
+    font-size: 36px; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.tarif-section ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;
+}
+
+.tarif-section ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    font-size: 18px; /* Taille du texte */
+}
+
+
+
+
+
+
+/* Style spécifique pour la section ELLE */
+#elle {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#elle h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#elle img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+/* Style spécifique pour la section ELLE */
+#lui {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#lui h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#lui img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+
+/* Style spécifique pour la section ELLE */
+#manucure {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#manucure h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#manucure img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+/* Style spécifique pour la section ELLE */
+#extension {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#extension h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#extension img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+/* Style spécifique pour la section ELLE */
+#cils {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#cils h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#cils img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+/* Style spécifique pour la section ELLE */
+#enfant {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#enfant h2 {
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#enfant img {
+    width: 100%; /* Réduit la taille de l'image à 30% */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+
+/* Modification de la mise en page pour les éléments de service */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 40px); /* Occupe environ un tiers de la largeur du conteneur avec un espacement */
+    min-width: 250px; /* Assure une taille minimale pour les plus petits écrans */
+}
+
+.service-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    margin: 0;
+}
